@@ -1,0 +1,372 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  margin-right: 25px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu p {
+  font-size: 30px;
+  color: #8a8613;
+  font-weight: bolder;
+}
+
+.menu li {
+  color: #8a8613;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+ul {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+.titulo {
+  text-align: center;
+  margin-top: 200px;
+}
+
+h1 {
+  font-size: 60px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 25px;
+  margin-bottom: 40px;
+}
+
+a {
+  font-size: 14px;
+  background: #5cb8ff;
+  color: #fff;
+  padding: 15px 25px;
+  border-radius: 20px;
+}
+
+header {
+  background: url(../img/fondo.jpg);
+  height: 100vh;
+  background-size: cover;
+}
+
+.contenedor {
+  max-width: 1280px;
+  width: 90%;
+  margin: auto;
+}
+
+h3 {
+  text-align: center;
+  font-size: 35px;
+  font-weight: normal;
+}
+
+.contenedor-sobre-mi {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contenedor-parrafo-y-boton {
+  width: 42%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contenedor-parrafo-y-boton p {
+  font-size: 15;
+}
+
+.contenedor-parrafo-y-boton a {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.contenedor-servicios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.servicio {
+  width: 25%;
+  padding: 50px 38px 50px 38px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.servicio h4 {
+  font-size: 30px;
+  margin: 0;
+}
+
+.celeste {
+  background: #40a8fa;
+}
+
+.violeta {
+  background: #5055df;
+}
+
+.servicio img {
+  float: right;
+}
+
+.servicio p {
+  font-size: 18px;
+  height: 200px;
+}
+
+span {
+  font-size: 70px;
+  color: blue;
+}
+
+.owl-nav {
+  text-align: center;
+}
+
+.contenedor-trabajar-conmigo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.contenedor-trabajar-conmigo div {
+  width: 25%;
+  text-align: center;
+}
+
+.contenedor-trabajar-conmigo p {
+  font-size: 18px;
+  margin-top: 30px;
+}
+
+.contenedor-trabajar-conmigo h4 {
+  margin: 0;
+}
+
+/* Sección Blog*/
+.blog {
+  background: #f9fafc;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.contenedor-publicaciones {
+  display: flex;
+  justify-content: space-around;
+}
+
+.publicacion {
+  width: 30%;
+  box-shadow: 1px 1px 14px #ccc;
+}
+
+.blog img {
+  width: 100%;
+}
+
+.blog h4 {
+  font-size: 23px;
+  margin: 0;
+  padding: 20px;
+}
+
+.blog p {
+  color: #5a6169;
+  line-height: 24px;
+  font-size: 16px;
+  padding: 10px 20px 20px 20px;
+  margin: 0;
+}
+
+.blog a {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.publicacion-segunda img {
+  height: 245px;
+}
+
+.primer-parrafo {
+  padding: 0px 20px 20px 20px !important;
+}
+
+/* Seccion ¿Que Esperas..?*/
+
+.que-esperas {
+  background: linear-gradient(rgba(84, 93, 220, 0.9), rgba(96, 171, 245, 1));
+  text-align: center;
+  padding: 50px 0 50px 0;
+}
+
+.que-esperas h3 {
+  font-size: 23px;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.que-esperas a {
+  padding: 15px 45px 15px 45px;
+  transition: 1s;
+}
+
+.que-esperas a:hover {
+  color: black;
+  transition: 1s;
+}
+
+/* Whatsapp ícono*/
+
+.whatsapp a {
+  background: none;
+  position: fixed;
+  top: 85%;
+  right: 5px;
+}
+
+/*Escondo el icono de menu responsive cuando no estoy en modo responsive*/
+.menu-icon {
+  display: none;
+}
+/*Responsive Design*/
+
+@media (max-width: 800px) {
+  /* Para el menu "nav" responsive */
+  nav {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background: #5cb8ff;
+    width: 100%;
+    display: none;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  .menu-icon {
+    display: block;
+    width: 25px;
+  }
+
+  /*Para el titulo responsive*/
+  .titulo {
+    margin-top: 50px;
+  }
+
+  h1 {
+    font-size: 49px;
+  }
+
+  h2 {
+    font-size: 19px;
+  }
+
+  /*Responsive para la sección "Sobre Mi"*/
+  .contenedor-sobre-mi {
+    flex-direction: column;
+  }
+
+  .img-mi {
+    width: 357px;
+  }
+  .contenedor-parrafo-y-boton {
+    width: 75%;
+    margin: auto;
+  }
+
+  .contenedor-parrafo-y-boton p {
+    font-size: 17px;
+  }
+
+  /*Responsive para sección "Servicios"*/
+  .contenedor-servicios {
+    flex-direction: column;
+  }
+
+  .servicio {
+    width: 66%;
+    margin: auto;
+    margin-bottom: 15px;
+  }
+
+  /*Responsive para sección "Mis Trabajos" */
+  h3 {
+    font-size: 46px;
+  }
+
+  /*Responsive para la sección "¿Por que trabajar conmigo?*/
+  .contenedor-trabajar-conmigo {
+    flex-direction: column;
+  }
+  .contenedor-trabajar-conmigo div {
+    width: 80%;
+    margin: auto;
+  }
+
+  /*Responsive para la sección "Blog"*/
+  .contenedor-publicaciones {
+    flex-direction: column;
+  }
+
+  .publicacion {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 15px;
+  }
+}
+
+/*Ahora ahora el responsive para tablets , pero al agregar 800px anteriomente solo
+necesito agregar ciertos retoques para tablets, ya que no los quiero para celulares*/
+
+@media (min-width: 800px) and (max-width: 900px) {
+  header {
+    height: 53vh;
+  }
+
+  .titulo {
+    margin-top: 50px;
+  }
+
+  h1 {
+    font-size: 49px;
+  }
+
+  h2 {
+    font-size: 19px;
+  }
+
+  .img-mi {
+    width: 45%;
+  }
+
+  .servicio {
+    width: 44%;
+  }
+
+  .publicacion {
+    width: 62%;
+  }
+  .publicacion-1 {
+    margin-right: 10px;
+  }
+}
